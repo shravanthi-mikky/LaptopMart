@@ -1,0 +1,15 @@
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.Dashboard-header{
+    height:11vh;
+    width:100vw;
+    background-color: rgb(177, 178, 180);
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding:1.5rem;
+}

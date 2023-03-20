@@ -1,0 +1,19 @@
+<body ng-app="LaptopMart">
+    <div class='headerOfSignIn' ng-controller="registerCtrl">
+        <div class='Regmaindiv'>
+            <div class='Child-one'>
+                <p class='Sign-In-Heading'>Register</p>
+            </div>
+            <div class='Child-two'>
+                <input class='InputFields' ng-model="fullname" placeholder="Full Name" type="text">
+                <input class='InputFields' ng-model="email" placeholder="Email" type="text">
+                <input class='InputFields' ng-model="mobile" placeholder="Mobile" type="text">
+                <input class='InputFields' ng-model="password" placeholder="Password" type="text">
+                <input class='InputFields' ng-model="role" placeholder="Role" type="text">
+                <a href="#!Login" class='Link CreateAccount'>Already Registered? Login account</a>
+            </div>
+
+            <Button class="Next" type="submit" ng-click="resgister(fullname,email,mobile,password,role)">Register</Button>
+        </div>
+    </div>
+</body>

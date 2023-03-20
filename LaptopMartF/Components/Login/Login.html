@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="LaptopMart">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/Components/Login/Login.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="../../ngStorage.js"></script>
+</head>
+
+<body>
+    <div class='headerOfSignIn' ng-controller="loginCtrl">
+        <div class='maindiv'>
+            <div class='Child-one'>
+                <p class='Sign-In-Heading'>Login</p>
+            </div>
+            <div class='Child-two'>
+                <input class='InputFields' ng-model="email" placeholder="Email ID" type="text">
+                <input class='InputFields' ng-model="password" placeholder="password" type="text">
+                <a href="#!Register" class='Link CreateAccount'>Not Registered? Create account</a>
+            </div>
+
+            <Button class="Next" type="submit" ng-click="login(email,password)">Login<a href="#!Dashboard">Page</a></Button>
+        </div>
+    </div>
+</body>
+
+</html>
