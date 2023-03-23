@@ -1,0 +1,33 @@
+<body ng-app="LaptopMart" ng-controller="DashboardCtrl">
+
+    <header class="Dashboard-header">
+        <div class="head-one">
+            <p class="Heading-laptopMart"><span class="FirstLetter">L</span>aptop<span class="LastLetter">MART</span>
+            </p>
+        </div>
+        <div class="head-two"></div>
+        <div class="head-three">
+            <img src="../../Images/Accounts.png" width='30' height='30'>
+        </div>
+    </header>
+    <div class="ProductViewMain" ng-init="GetProductDetails()">
+        <div ng-init="prod=SingleProductsArray">
+            <div class="FirstHalf">
+                <img src={{SingleProductsArray.image}} width='150'>
+            </div>
+            <div class="SecondHalf">
+                <header class="Dashboard-header">
+                    <h3 class="HeadingDetails">Details</h3>
+                </header>
+                <p>{{SingleProductsArray.productName}}</p>
+                    {{SingleProductsArray.description}}
+                    {{SingleProductsArray.rating}}
+                    {{SingleProductsArray.price}}
+
+            </div>
+        </div>
+    </div>
+
+    <footer>  </footer>
+
+</body>

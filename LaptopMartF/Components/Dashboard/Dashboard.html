@@ -2,21 +2,34 @@
     <div>
         <header class="Dashboard-header">
             <div class="head-one">
-                <img src="AppIcon.jpg">
-                <p class="Heading-laptopMart">LaptopMart</p>
+                <!-- <img src="AppIcon.jpg"> -->
+                <p class="Heading-laptopMart"><span class="FirstLetter">L</span>aptop<span
+                        class="LastLetter">MART</span></p>
             </div>
-            <div class="head-two"><input placeholder="search" type="text"></div>
+            <div class="head-two"></div>
             <div class="head-three">
-                <img src="../../Images/Accounts.png" width='30'>
+                <input class="InputSearch" placeholder="search" type="text">
+                <img src="../../Images/Accounts.png" width='30' height='30'>
             </div>
         </header>
         <Main>
-            <div>
-    
+            <div class="ProductsDivMain" ng-controller="DashboardCtrl" ng-init="getAllProducts();">
+                <div class="ProductsDiv" ng-repeat="prod in AllProductsArray">
+                    <div>
+                        <img src={{prod.image}} width='150'>
+                        <p> {{prod.productName}} </p>
+                        <p class="PriceDiv" font-weight="700">Price : <span>{{prod.price}}/-</span></p>
+
+                        <p class="TwoButtons">
+                            <span class="PaymentDiv" ng-click="ViewPage(prod.productId)">View</span>
+                            <span class="PaymentDiv">Buy</span>
+                        </p>
+                    </div>
+                </div>
             </div>
         </Main>
-        <footer>
-    
+        <footer class="footerSession">
+
         </footer>
     </div>
 

@@ -8,7 +8,7 @@ app.controller("loginCtrl",function($scope,$http,$location,$window){
             password:password
         }
         //call the service
-        $http.post("https://localhost:44386/api/User/Login",JSON.stringify(data))
+        $http.post("https://localhost:44362/api/User/Login",JSON.stringify(data))
         .then(function(response){
             console.log(response);
 
