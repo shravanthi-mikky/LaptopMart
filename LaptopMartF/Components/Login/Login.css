@@ -29,6 +29,10 @@
     background-color:transparent;
     box-shadow: 5px 10px 18px #888888;
 }
+
+.maindiv:hover {
+    transform: scale(1.1);
+  }
 .Sign-In-Heading{
     font-size: 180%;
     color:#fffefe;
@@ -61,7 +65,7 @@ input[type='text']{
     padding:0.6rem;
     background-color: transparent;
 }
-input[type='text']:focus{
+.InputFields input[type='text']:focus{
     border:2px solid #a8a8a8;
     transition: 0.09s;
     color:white;

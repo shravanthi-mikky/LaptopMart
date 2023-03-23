@@ -18,8 +18,8 @@ when("/Dashboard",{
     controller:"DashboardCtrl"
 }).
 
-when("/AddTravel",{
-    templateUrl:"Components/AddTravel/AddTravel.html",
+when("/ProductPage",{
+    templateUrl:"Components/ProductPage/ProductPage.html",
     controller:"DashboardCtrl"
 }).
 
